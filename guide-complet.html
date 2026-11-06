@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guide pratique pour installer TGME Remote sur un NAS Synology et utiliser les applications Windows.">
+<title>TGME Remote — Guide d’installation et d’utilisation</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+:root{color-scheme:light;--ink:#14243b;--muted:#53647a;--line:#dce4ec;--blue:#165bd8;--teal:#087e78;--paper:#f4f7fb;--white:#fff;--soft:#eaf3ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--blue)}
+header{background:var(--white);border-bottom:1px solid var(--line)}
+.top{max-width:980px;margin:auto;padding:16px 24px;display:flex;justify-content:space-between;gap:18px;align-items:center}
+.brand{font-weight:800;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:14px}
+main{max-width:900px;margin:auto;padding:44px 24px 64px}
+.eyebrow{color:var(--teal);font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,54px);line-height:1.1;letter-spacing:-1.7px;margin:12px 0 18px}
+h2{font-size:26px;line-height:1.25;margin:0 0 14px}
+h3{font-size:18px;margin:0 0 7px}
+p,li{color:var(--muted)}
+.lead{font-size:19px;max-width:760px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 28px}
+.button{display:inline-block;background:var(--blue);color:white;padding:11px 16px;border-radius:9px;text-decoration:none;font-weight:750}
+.button.secondary{background:white;color:var(--blue);border:1px solid var(--line)}
+.notice{padding:16px 18px;background:var(--soft);border-left:4px solid var(--blue);border-radius:7px;color:var(--ink)}
+.contents,.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px;margin:20px 0}
+.contents{display:flex;gap:10px 18px;flex-wrap:wrap}
+.contents a{font-size:14px;text-decoration:none}
+section{scroll-margin-top:20px}
+.steps{counter-reset:step;list-style:none;padding:0;margin:14px 0}
+.steps li{counter-increment:step;position:relative;padding:0 0 18px 48px;margin:0}
+.steps li:before{content:counter(step);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#e5efff;color:var(--blue);font-weight:800}
+.steps li+li{border-top:1px solid var(--line);padding-top:16px}
+.steps li+li:before{top:16px}
+.steps strong{color:var(--ink)}
+.note{font-size:14px;background:#fff8e8;border:1px solid #f0dfb7;border-radius:9px;padding:14px 16px}
+.end{border-top:1px solid var(--line);margin-top:30px;padding-top:20px;font-size:14px}
+footer{margin-top:34px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:13px}
+@media(max-width:600px){.top{align-items:flex-start;flex-direction:column;padding:14px 18px}main{padding:30px 17px 48px}.card,.contents{padding:18px}h2{font-size:23px}}
+@media print{body{background:white;font-size:11pt}main{max-width:none;padding:0}.top nav,.actions,.contents{display:none!important}.card{break-inside:avoid;border-color:#bbb}.steps li{break-inside:avoid}a{color:inherit;text-decoration:none}}
+</style>
+</head>
+<body>
+<header><div class="top"><a class="brand" href="index.html">TGME Remote</a><nav aria-label="Navigation principale"><a href="index.html">Présentation</a><a href="telechargement.html">Téléchargement</a></nav></div></header>
+<main>
+<p class="eyebrow">Guide pratique · version 1.0.0-0409</p>
+<h1>Installer et utiliser TGME Remote</h1>
+<p class="lead">Suivez ces étapes pour installer le serveur sur Synology, préparer les applications Windows et démarrer une première assistance.</p>
+<div class="actions"><a class="button" href="telechargement.html">Télécharger l’application serveur</a><a class="button secondary" href="guide-complet.html" download>Télécharger ce guide (HTML)</a></div>
+<p class="notice">Ce guide couvre les actions utiles au quotidien. Il ne décrit pas les détails internes du produit.</p>
+<nav class="contents" aria-label="Sommaire"><a href="#prerequis">Avant de commencer</a><a href="#synology">Installer sur Synology</a><a href="#ports">Ports et accès depuis Internet</a><a href="#comptes">Préparer les comptes et applications</a><a href="#client">Installer et inscrire un Client</a><a href="#assistance">Démarrer une assistance</a><a href="#aide">En cas de difficulté</a></nav>
+
+<section id="prerequis" class="card">
+<h2>Avant de commencer</h2>
+<ul>
+<li>Un NAS Synology avec DSM 7.2.2-72806 ou version ultérieure, et un modèle reconnu compatible par le Centre de paquets.</li>
+<li>Un compte DSM autorisé à installer des paquets.</li>
+<li>Les applications Windows Client et Technicien fournies par la console de votre NAS.</li>
+</ul>
+<p>La page <a href="telechargement.html">Téléchargement</a> propose le paquet serveur et le présent guide. Si le Centre de paquets indique que le modèle n’est pas compatible, ne forcez pas l’installation.</p>
+</section>
+
+<section id="synology" class="card">
+<h2>1. Installer le serveur sur Synology</h2>
+<ol class="steps">
+<li><strong>Téléchargez le SPK</strong> depuis la page <a href="telechargement.html">Téléchargement</a>.</li>
+<li><strong>Ouvrez le Centre de paquets</strong> dans DSM et choisissez l’installation manuelle.</li>
+<li><strong>Sélectionnez le fichier SPK</strong>, puis suivez les étapes affichées par DSM et le paquet. Démarrez TGME Remote lorsque l’installation est terminée.</li>
+<li><strong>Ouvrez la console TGME Remote</strong> à l’adresse de votre NAS fournie pour l’installation. Connectez-vous avec le compte admin. Après la mise à jour 0409, lisez et acceptez les conditions d’utilisation actualisées pour continuer, puis terminez la protection du compte si elle est demandée.</li>
+</ol>
+<p class="note">Le compte admin est réservé à l’administration et ne peut pas effectuer de prise en main. Sans licence, gardez ce compte et créez un compte Technicien distinct pour intervenir. Aucune fonction n’est désactivée et aucun quota commercial d’appareils n’est appliqué. La licence multi-Techniciens est permanente, sans expiration, et nécessaire uniquement pour autoriser plusieurs comptes Technicien.</p>
+</section>
+
+<section id="ports" class="card">
+<h2>Accès depuis Internet : ports à diriger vers le NAS</h2>
+<p>Si les postes Client ou Technicien se connectent depuis Internet, configurez sur le routeur une redirection vers l’adresse IP locale du NAS, avec les protocoles et ports ci-dessous :</p>
+<ul>
+<li><strong>TCP 5081</strong> : accès HTTPS à la console et signalisation WSS des applications Windows.</li>
+<li><strong>TCP et UDP 3478</strong> : STUN/TURN pour établir et relayer les sessions.</li>
+<li><strong>UDP 50000–51000</strong> : médias des sessions qui passent par le relais.</li>
+</ul>
+<p class="note">Dans DSM, autorisez également ces services dans le pare-feu s’il est activé. Le paquet déclare les ports dans les outils DSM, mais ne garantit pas qu’une règle soit déjà active dans le routeur ou dans un profil de pare-feu existant.</p>
+<p class="note">Le port TCP 5080 est interne au NAS, entre le proxy HTTPS et le service. Ne le redirigez pas vers Internet. Si TGME Remote est utilisé uniquement sur le réseau local, aucune redirection Internet n’est nécessaire.</p>
+</section>
+
+<section id="comptes" class="card">
+<h2>2. Préparer les comptes et les applications</h2>
+<ol class="steps">
+<li>Dans la console, créez un compte Technicien pour la personne qui réalisera les interventions.</li>
+<li>Téléchargez depuis cette même console les applications TGME Remote Client et TGME Remote Technicien.</li>
+<li>Installez ou démarrez chaque application sur le PC correspondant. Utilisez les fichiers fournis par le NAS auquel ces postes doivent se connecter.</li>
+</ol>
+<p>Le Client s’installe sur le poste qui recevra l’assistance. Le Technicien s’installe sur le poste de la personne qui intervient.</p>
+</section>
+
+<section id="client" class="card">
+<h2>3. Installer et inscrire un Client</h2>
+<ol class="steps">
+<li>Démarrez TGME Remote Client sur le PC à assister et suivez l’écran d’inscription.</li>
+<li>Pour un nouvel appareil, saisissez le jeton d’inscription fourni par l’administrateur du serveur.</li>
+<li>Une fois inscrit, le Client affiche son identifiant et un code temporaire. Communiquez-les uniquement au Technicien attendu, par un moyen de contact fiable.</li>
+</ol>
+<p class="note">Le jeton d’inscription sert uniquement à inscrire un nouveau Client et reste valable 30 jours. Après son expiration, il ne permet plus d’inscrire un nouvel appareil : demandez un jeton valide. Un Client déjà inscrit peut continuer à se reconnecter. Cette règle est indépendante de la licence.</p>
+</section>
+
+<section id="assistance" class="card">
+<h2>4. Démarrer une assistance</h2>
+<h3>Sur le poste Client</h3>
+<ol class="steps">
+<li>Ouvrez TGME Remote Client et transmettez au Technicien l’identifiant du poste et le code temporaire affichés.</li>
+<li>Lorsqu’une demande apparaît, vérifiez que vous attendiez bien cette intervention et contrôlez le nom du Technicien.</li>
+<li>Acceptez la demande, puis comparez le code de sécurité affiché sur les deux postes avant de confirmer.</li>
+</ol>
+<h3>Sur le poste Technicien</h3>
+<ol class="steps">
+<li>Ouvrez TGME Remote Technicien et connectez-vous avec votre compte Technicien.</li>
+<li>Recherchez le poste dans le carnet ou saisissez son identifiant. Entrez le code temporaire communiqué par le Client, puis choisissez <strong>Prendre le contrôle</strong>.</li>
+<li>Attendez l’accord du Client et confirmez que le code de sécurité correspond. La fenêtre du poste distant s’ouvre alors.</li>
+<li>À la fin de l’intervention, terminez la session depuis sa fenêtre.</li>
+</ol>
+<p>Le Client garde la possibilité d’accepter ou de refuser une demande d’assistance accompagnée. N’acceptez une demande que si vous connaissez la personne qui intervient.</p>
+</section>
+
+<section id="aide" class="card">
+<h2>En cas de difficulté</h2>
+<ul>
+<li><strong>Le paquet ne s’installe pas :</strong> vérifiez la compatibilité du modèle Synology et la version DSM requise dans le Centre de paquets.</li>
+<li><strong>Le poste n’apparaît pas :</strong> vérifiez que le Client a terminé son inscription et que le service TGME Remote fonctionne sur le NAS.</li>
+<li><strong>La demande n’aboutit pas :</strong> vérifiez que l’identifiant et le code temporaire correspondent au Client ouvert, puis recommencez avec l’accord de l’utilisateur.</li>
+<li><strong>Le jeton a expiré :</strong> demandez à l’administrateur du serveur un jeton valide pour chaque nouvelle inscription. Les Clients déjà inscrits n’ont pas à refaire leur inscription pour se reconnecter.</li>
+</ul>
+</section>
+
+<p class="end">Pour retrouver les téléchargements, ouvrez la <a href="telechargement.html">page TGME Remote</a>. Pour une question sur votre installation, contactez l’administrateur de votre serveur.</p>
+<footer>TGME Remote · Guide d’installation et d’utilisation · 1.0.0-0409</footer>
+</main>
+</body>
+</html>

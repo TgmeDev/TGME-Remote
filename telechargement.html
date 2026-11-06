@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Télécharger TGME Remote 1.0.0-0409 et son guide d’installation Synology.">
+<title>Télécharger TGME Remote 1.0.0-0409</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+:root{color-scheme:light;--ink:#14243b;--muted:#53647a;--line:#dce4ec;--blue:#165bd8;--teal:#087e78;--paper:#f4f7fb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:17px 24px;border-bottom:1px solid var(--line);background:white}header a{font-weight:800;color:var(--ink);text-decoration:none}
+main{max-width:850px;margin:0 auto;padding:34px 24px 54px}.eyebrow{text-transform:uppercase;letter-spacing:1.4px;color:var(--teal);font-size:12px;font-weight:800}
+h1{font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-1.2px;margin:8px 0 14px}h2{font-size:22px;margin:0 0 10px}
+p,li{color:var(--muted)}a{color:var(--blue)}.card{background:white;border:1px solid var(--line);border-radius:15px;padding:24px;margin:20px 0}
+.button{display:inline-block;background:var(--blue);color:white;padding:12px 17px;border-radius:9px;text-decoration:none;font-weight:750;margin:6px 8px 6px 0}
+.button.secondary{background:white;color:var(--blue);border:1px solid var(--line)}.status{padding:12px;border-radius:9px;background:#eef5fa}.button[hidden]{display:none}
+ul{padding-left:22px}.fine{font-size:14px}@media(max-width:600px){main{padding:24px 16px 40px}.card{padding:19px}}
+</style>
+</head>
+<body>
+<header><a href="index.html">TGME Remote</a> · <a href="guide-complet.html">Guide d’installation et d’utilisation</a></header>
+<main>
+<p class="eyebrow">Version 1.0.0-0409</p>
+<h1>Télécharger TGME Remote</h1>
+<p>Obtenez le paquet serveur pour votre NAS Synology. Après installation, les applications Windows Client et Technicien se téléchargent depuis la console de votre NAS.</p>
+<section class="card">
+<h2>Application serveur Synology</h2>
+<p><strong>TGMERemoteServer-1.0.0-0409.spk</strong></p>
+<p>Requiert DSM 7.2.2-72806 au minimum et un modèle Synology pris en charge. Le Centre de paquets vérifie la compatibilité ; ne forcez pas l’installation si votre modèle est refusé.</p>
+<p id="release-status" class="status" role="status">Téléchargez le paquet serveur 1.0.0-0409 depuis la Release officielle GitHub. Les applications Windows Client et Technicien se récupèrent ensuite depuis la console du NAS.</p>
+<a class="button" href="https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0409/TGMERemoteServer-1.0.0-0409.spk" target="_blank" rel="noopener noreferrer">Télécharger directement le SPK 1.0.0-0409</a>
+<a id="release-link" class="button" href="https://github.com/TgmeDev/TGME-Remote/releases/latest" target="_blank" rel="noopener noreferrer">Consulter la Release et ses informations</a>
+<p class="fine">Après la mise à jour, l’administrateur doit accepter les conditions d’utilisation actualisées.</p>
+
+</section>
+<section class="card" id="licence">
+<h2>Licence et inscription Client</h2>
+<p>Sans licence, le compte admin sert à gérer le serveur et un compte Technicien distinct peut effectuer les prises en main. admin ne peut pas prendre la main. Aucune fonctionnalité n’est désactivée et aucun quota commercial ne limite les appareils gérés ; les capacités du NAS et du réseau s’appliquent.</p>
+<p>La licence multi-Techniciens est permanente, sans expiration, et nécessaire uniquement pour autoriser plusieurs comptes Technicien. Le jeton Client, valable 30 jours, ne sert qu’aux nouvelles inscriptions et reste indépendant de la licence. Les Clients déjà inscrits peuvent se reconnecter après son expiration.</p>
+</section>
+<section class="card" id="guide">
+<h2>Guide d’installation et d’utilisation</h2>
+<p>Les étapes pour installer le serveur sur Synology, préparer les applications Windows et démarrer une assistance.</p>
+<a class="button" href="guide-complet.html" download>Télécharger le guide (HTML)</a>
+<a class="button secondary" href="guide-complet.html">Lire le guide en ligne</a>
+</section>
+<p><a href="index.html">Retour à la présentation</a></p>
+</main>
+<script src="site-config.js"></script>
+<script>
+(function(){var repo=(window.TGME_DISTRIBUTION&&window.TGME_DISTRIBUTION.repository)||"";if(!repo&&/^[^.]+\.github\.io$/i.test(location.hostname)){var owner=location.hostname.split(".")[0];var project=location.pathname.split("/").filter(Boolean)[0]||"";if(project)repo=owner+"/"+project;}if(/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repo)){var a=document.getElementById("release-link");a.href="https://github.com/"+repo+"/releases/latest";a.hidden=false;document.getElementById("release-status").textContent="Le lien ouvre la page GitHub Release la plus récente de ce dépôt.";}})();
+</script>
+</body>
+</html>
