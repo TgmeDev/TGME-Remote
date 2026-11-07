@@ -2,7 +2,7 @@
 
 Assistance de postes Windows à distance avec un serveur hébergé sur un NAS Synology. **Version publiée : 1.0.0-0409.**
 
-[Site de présentation](https://tgmedev.github.io/TGME-Remote/) · [Guide Synology](https://tgmedev.github.io/TGME-Remote/guide-complet.html) · [Télécharger le SPK](https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0409/TGMERemoteServer-1.0.0-0409.spk) · [Détails de la Release](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0409)
+[Site de présentation](https://tgmedev.github.io/TGME-Remote/) · [Guide Synology](https://tgmedev.github.io/TGME-Remote/guide-complet.html) · [Tutoriel application et serveur NAS](tutoriel-application.html) · [Télécharger le SPK](https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0409/TGMERemoteServer-1.0.0-0409.spk) · [Détails de la Release](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0409)
 
 ## Ce que comprend TGME Remote
 
