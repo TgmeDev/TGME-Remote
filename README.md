@@ -10,9 +10,9 @@ Le serveur s’installe sur un NAS Synology. Les applications Windows Client et 
 
 ## Licence et inscription
 
-- Sans licence, le compte admin sert à administrer le serveur et un compte Technicien distinct peut effectuer les prises en main. admin ne consomme pas cette place et ne peut pas prendre la main.
-- Aucune fonction n’est désactivée et aucun quota commercial ne limite le nombre d’appareils gérés. Les capacités du NAS et du réseau restent applicables.
-- La licence multi-Techniciens est permanente, sans expiration. Elle est nécessaire uniquement pour autoriser plusieurs comptes Technicien.
+- La licence gratuite autorise un compte Technicien lié à un seul poste Technicien, ainsi que deux PC Clients inscrits. Le compte admin est séparé, sert à administrer le serveur et ne peut pas prendre la main.
+- Pour inscrire un troisième PC Client, supprimez d’abord un poste utilisé dans la console admin. Les licences payantes définissent leurs quotas de comptes Technicien et de PC Clients.
+- Les licences payantes sont permanentes et définissent le nombre de Techniciens et de PC Clients autorisés.
 - Le jeton d’inscription Client est valable 30 jours pour inscrire un nouveau Client. Après expiration, les nouvelles inscriptions sont refusées ; les Clients déjà inscrits peuvent se reconnecter. Le jeton est indépendant de la licence.
 
 ## Installation
