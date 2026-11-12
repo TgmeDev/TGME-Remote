@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Télécharger TGME Remote 1.0.0-0409 et son guide d’installation Synology.">
-<title>Télécharger TGME Remote 1.0.0-0409</title>
+<meta name="description" content="Télécharger TGME Remote 1.0.0-0450 et son guide d’installation Synology.">
+<title>Télécharger TGME Remote 1.0.0-0450</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <style>
 :root{color-scheme:light;--ink:#14243b;--muted:#53647a;--line:#dce4ec;--blue:#165bd8;--teal:#087e78;--paper:#f4f7fb}
@@ -21,18 +21,36 @@ ul{padding-left:22px}.fine{font-size:14px}@media(max-width:600px){main{padding:2
 <body>
 <header><a href="index.html">TGME Remote</a> · <a href="guide-complet.html">Guide d’installation et d’utilisation</a></header>
 <main>
-<p class="eyebrow">Version 1.0.0-0409</p>
+<p class="eyebrow">Version 1.0.0-0450</p>
 <h1>Télécharger TGME Remote</h1>
 <p>Obtenez le paquet serveur pour votre NAS Synology. Après installation, les applications Windows Client et Technicien se téléchargent depuis la console de votre NAS.</p>
 <section class="card">
 <h2>Application serveur Synology</h2>
-<p><strong>TGMERemoteServer-1.0.0-0409.spk</strong></p>
+<p><strong>TGMERemoteServer-1.0.0-0450.spk</strong></p>
 <p>Requiert DSM 7.2.2-72806 au minimum et un modèle Synology pris en charge. Le Centre de paquets vérifie la compatibilité ; ne forcez pas l’installation si votre modèle est refusé.</p>
-<p id="release-status" class="status" role="status">Téléchargez le paquet serveur 1.0.0-0409 depuis la Release officielle GitHub. Les applications Windows Client et Technicien se récupèrent ensuite depuis la console du NAS.</p>
-<a class="button" href="https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0409/TGMERemoteServer-1.0.0-0409.spk" target="_blank" rel="noopener noreferrer">Télécharger directement le SPK 1.0.0-0409</a>
+<p id="release-status" class="status" role="status">Téléchargez le paquet serveur 1.0.0-0450 depuis la Release officielle GitHub. Les applications Windows Client et Technicien se récupèrent ensuite depuis la console du NAS.</p>
+<a class="button" href="https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0450/TGMERemoteServer-1.0.0-0450.spk" target="_blank" rel="noopener noreferrer">Télécharger directement le SPK 1.0.0-0450</a>
 <a id="release-link" class="button" href="https://github.com/TgmeDev/TGME-Remote/releases/latest" target="_blank" rel="noopener noreferrer">Consulter la Release et ses informations</a>
 <p class="fine">Après la mise à jour, l’administrateur doit accepter les conditions d’utilisation actualisées.</p>
 
+</section>
+<section class="card" id="nouveautes">
+<h2>Nouveautés de la version 1.0.0-0450</h2>
+<ul>
+<li>Le diagnostic réseau détaille mieux WebRTC/ICE, KCP et le transport direct complémentaire MsQuic, avec les ports à vérifier.</li>
+<li>Le navigateur de récupération Client conserve l’explorateur et ajoute des raccourcis vers Bureau, Mes documents et Téléchargements.</li>
+<li>Le transfert de fichiers a été simplifié dans les deux sens.</li>
+</ul>
+</section>
+<section class="card" id="historique-0409">
+<h2>Version précédente — 1.0.0-0409</h2>
+<p>Cette fiche historique reste consultable, mais le SPK 0409 n’est plus proposé au téléchargement. Les notes et l’empreinte de cette version sont conservées sur <a href="https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0409">sa page GitHub Release</a>.</p>
+<ul>
+<li>Mise à jour du catalogue vidéo et retrait de H.264, OpenH264 et AVC444.</li>
+<li>Amélioration des choix codec et audits associés.</li>
+<li>Fermeture de la fenêtre Client à la déconnexion du Technicien.</li>
+<li>Correctifs du paquet Synology.</li>
+</ul>
 </section>
 <section class="card" id="licence">
 <h2>Licence et inscription Client</h2>
