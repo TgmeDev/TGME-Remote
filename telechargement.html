@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Télécharger TGME Remote 1.0.0-0450 et son guide d’installation Synology.">
-<title>Télécharger TGME Remote 1.0.0-0450</title>
+<meta name="description" content="Télécharger TGME Remote et son guide d’installation Synology.">
+<title data-release="title">Télécharger TGME Remote 1.0.0-0456</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <style>
 :root{color-scheme:light;--ink:#14243b;--muted:#53647a;--line:#dce4ec;--blue:#165bd8;--teal:#087e78;--paper:#f4f7fb}
@@ -21,25 +21,36 @@ ul{padding-left:22px}.fine{font-size:14px}@media(max-width:600px){main{padding:2
 <body>
 <header><a href="index.html">TGME Remote</a> · <a href="guide-complet.html">Guide d’installation et d’utilisation</a></header>
 <main>
-<p class="eyebrow">Version 1.0.0-0450</p>
+<p class="eyebrow" data-release="version">Version 1.0.0-0456</p>
 <h1>Télécharger TGME Remote</h1>
 <p>Obtenez le paquet serveur pour votre NAS Synology. Après installation, les applications Windows Client et Technicien se téléchargent depuis la console de votre NAS.</p>
 <section class="card">
 <h2>Application serveur Synology</h2>
-<p><strong>TGMERemoteServer-1.0.0-0450.spk</strong></p>
+<p><strong data-release="filename">TGMERemoteServer-1.0.0-0456.spk</strong></p>
+<p class="fine">SHA-256 <code data-release="sha256" style="overflow-wrap:anywhere">13e177bf6711a6cee5a3a2a432c8fd8d863ae0789c4d27b8d219e5731c21caaf</code></p>
 <p>Requiert DSM 7.2.2-72806 au minimum et un modèle Synology pris en charge. Le Centre de paquets vérifie la compatibilité ; ne forcez pas l’installation si votre modèle est refusé.</p>
-<p id="release-status" class="status" role="status">Téléchargez le paquet serveur 1.0.0-0450 depuis la Release officielle GitHub. Les applications Windows Client et Technicien se récupèrent ensuite depuis la console du NAS.</p>
-<a class="button" href="https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0450/TGMERemoteServer-1.0.0-0450.spk" target="_blank" rel="noopener noreferrer">Télécharger directement le SPK 1.0.0-0450</a>
-<a id="release-link" class="button" href="https://github.com/TgmeDev/TGME-Remote/releases/latest" target="_blank" rel="noopener noreferrer">Consulter la Release et ses informations</a>
+<p id="release-status" class="status" role="status" data-release="description">Téléchargez le paquet serveur 1.0.0-0456 depuis la Release officielle GitHub. Les applications Windows Client et Technicien se récupèrent ensuite depuis la console du NAS.</p>
+<a class="button" data-release-link="downloadUrl" data-release="download-label" href="https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0456/TGMERemoteServer-1.0.0-0456.spk" target="_blank" rel="noopener noreferrer">Télécharger directement le SPK 1.0.0-0456</a>
+<a id="release-link" class="button" data-release-link="releaseUrl" href="https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0456" target="_blank" rel="noopener noreferrer">Consulter la Release et ses informations</a>
 <p class="fine">Après la mise à jour, l’administrateur doit accepter les conditions d’utilisation actualisées.</p>
 
 </section>
 <section class="card" id="nouveautes">
-<h2>Nouveautés de la version 1.0.0-0450</h2>
+<h2>Nouveautés de la version 1.0.0-0456</h2>
 <ul>
-<li>Le diagnostic réseau détaille mieux WebRTC/ICE, KCP et le transport direct complémentaire MsQuic, avec les ports à vérifier.</li>
-<li>Le navigateur de récupération Client conserve l’explorateur et ajoute des raccourcis vers Bureau, Mes documents et Téléchargements.</li>
-<li>Le transfert de fichiers a été simplifié dans les deux sens.</li>
+<li>Enregistrement local du mot de passe permanent protégé par un PIN distinct par compte Technicien. Le double-clic sur un poste configuré ouvre directement la session de contrôle après validation du PIN.</li>
+<li>Débit maximal d’envoi relevé et réception des outils accélérée. Le débit réel dépend du réseau.</li>
+<li>OpenSSL 3.5.9 LTS et MsQuic 2.6.4 intégrés aux applications Windows.</li>
+<li>Compte rendu Analyse IA mieux séparé entre opérations.</li>
+</ul>
+</section>
+<section class="card" id="historique-0450">
+<h2>Version précédente — 1.0.0-0450</h2>
+<p>La fiche 0450 reste visible pour son historique, mais son SPK n’est plus proposé au téléchargement. Les notes restent consultables sur <a href="https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0450">sa page GitHub Release</a>.</p>
+<ul>
+<li>Diagnostic réseau WebRTC/ICE, KCP et MsQuic avec les ports à vérifier.</li>
+<li>Raccourcis vers Bureau, Mes documents et Téléchargements dans le navigateur de récupération Client.</li>
+<li>Transfert de fichiers simplifié dans les deux sens.</li>
 </ul>
 </section>
 <section class="card" id="historique-0409">
@@ -65,9 +76,5 @@ ul{padding-left:22px}.fine{font-size:14px}@media(max-width:600px){main{padding:2
 </section>
 <p><a href="index.html">Retour à la présentation</a></p>
 </main>
-<script src="site-config.js"></script>
-<script>
-(function(){var repo=(window.TGME_DISTRIBUTION&&window.TGME_DISTRIBUTION.repository)||"";if(!repo&&/^[^.]+\.github\.io$/i.test(location.hostname)){var owner=location.hostname.split(".")[0];var project=location.pathname.split("/").filter(Boolean)[0]||"";if(project)repo=owner+"/"+project;}if(/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repo)){var a=document.getElementById("release-link");a.href="https://github.com/"+repo+"/releases/latest";a.hidden=false;document.getElementById("release-status").textContent="Le lien ouvre la page GitHub Release la plus récente de ce dépôt.";}})();
-</script>
 </body>
 </html>

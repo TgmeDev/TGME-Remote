@@ -1,15 +1,16 @@
 # TGME Remote
 
-Assistance de postes Windows à distance avec un serveur hébergé sur un NAS Synology. **Version publiée : 1.0.0-0450.**
+Assistance de postes Windows à distance avec un serveur hébergé sur un NAS Synology. **Version publiée : 1.0.0-0456.**
 
-[Site de présentation](https://tgmedev.github.io/TGME-Remote/) · [Guide Synology](https://tgmedev.github.io/TGME-Remote/guide-complet.html) · [Tutoriel application et serveur NAS](tutoriel-application.html) · [Télécharger le SPK 0450](https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0450/TGMERemoteServer-1.0.0-0450.spk) · [Détails de la Release 0450](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0450) · [Historique de la Release 1.0.0-0409](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0409)
+[Site de présentation](https://tgmedev.github.io/TGME-Remote/) · [Guide Synology](https://tgmedev.github.io/TGME-Remote/guide-complet.html) · [Tutoriel application et serveur NAS](tutoriel-application.html) · [Télécharger le SPK 0456](https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0456/TGMERemoteServer-1.0.0-0456.spk) · [Détails de la Release 0456](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0456) · [Historique de la Release 1.0.0-0450](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0450)
 
-## Nouveautés de la version 1.0.0-0450
+## Nouveautés de la version 1.0.0-0456
 
-- Le diagnostic réseau présente mieux WebRTC/ICE, KCP et le transport direct complémentaire MsQuic, avec les ports à vérifier.
-- Le transfert de fichiers est plus simple; le navigateur de récupération conserve l’explorateur et ajoute des raccourcis vers Bureau, Mes documents et Téléchargements du Client.
+- Enregistrement local du mot de passe permanent protégé par un PIN propre au compte Technicien. Le double-clic sur un poste configuré lance le contrôle après validation du PIN.
+- Transferts optimisés avec un débit d’envoi maximal relevé et une réception des outils plus rapide. Les performances réelles dépendent du réseau.
+- Bibliothèques réseau Windows actualisées et nouvelles séparations entre opérations dans le compte rendu Analyse IA.
 
-La version 1.0.0-0409 reste consultable pour son historique; son paquet n’est plus proposé au téléchargement.
+La version 1.0.0-0450 reste consultable pour son historique; son paquet n’est plus proposé au téléchargement.
 
 ## Ce que comprend TGME Remote
 
