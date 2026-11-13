@@ -1,16 +1,24 @@
 # TGME Remote
 
-Assistance de postes Windows à distance avec un serveur hébergé sur un NAS Synology. **Version publiée : 1.0.0-0456.**
+Assistance de postes Windows à distance avec un serveur hébergé sur un NAS Synology. **Version publiée : 1.0.0-0457.**
 
-[Site de présentation](https://tgmedev.github.io/TGME-Remote/) · [Guide Synology](https://tgmedev.github.io/TGME-Remote/guide-complet.html) · [Tutoriel application et serveur NAS](tutoriel-application.html) · [Télécharger le SPK 0456](https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0456/TGMERemoteServer-1.0.0-0456.spk) · [Détails de la Release 0456](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0456) · [Historique de la Release 1.0.0-0450](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0450)
+[Site de présentation](https://tgmedev.github.io/TGME-Remote/) · [Guide Synology](https://tgmedev.github.io/TGME-Remote/guide-complet.html) · [Tutoriel application et serveur NAS](tutoriel-application.html) · [Télécharger le SPK 0457](https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0457/TGMERemoteServer-1.0.0-0457.spk) · [Détails de la Release 0457](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0457) · [Historique de la Release 0456](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0456) · [Historique de la Release 1.0.0-0450](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0450)
 
-## Nouveautés de la version 1.0.0-0456
+## Nouveautés de la version 1.0.0-0457
 
-- Enregistrement local du mot de passe permanent protégé par un PIN propre au compte Technicien. Le double-clic sur un poste configuré lance le contrôle après validation du PIN.
-- Transferts optimisés avec un débit d’envoi maximal relevé et une réception des outils plus rapide. Les performances réelles dépendent du réseau.
-- Bibliothèques réseau Windows actualisées et nouvelles séparations entre opérations dans le compte rendu Analyse IA.
+- La case d’enregistrement/remplacement du mot de passe permanent est maintenant visible dans l’écran Technicien.
+- Si le mot de passe permanent change, le Technicien peut saisir son remplacement et définir un nouveau PIN personnel à six chiffres.
 
-La version 1.0.0-0450 reste consultable pour son historique; son paquet n’est plus proposé au téléchargement.
+## Historique de la version 1.0.0-0456
+
+- Mot de passe permanent mémorisé localement par compte Technicien et protégé par un PIN à six chiffres; double-clic sur un poste configuré pour ouvrir le contrôle après validation.
+- Transferts de fichiers et réception des outils optimisés.
+- OpenSSL 3.5.9 LTS et MsQuic 2.6.4 intégrés aux applications Windows.
+- Compte rendu Analyse IA mieux organisé entre opérations.
+- Deuxième Technicien en accès de visualisation, avec le contrôle conservé au premier.
+- Reprise des demandes de transfert après une coupure temporaire tant que la session reste ouverte.
+
+L’ancienne Release 0456 reste consultable, mais son SPK n’est plus proposé au téléchargement. La version 1.0.0-0450 reste également visible pour son historique.
 
 ## Ce que comprend TGME Remote
 

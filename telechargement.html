@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Télécharger TGME Remote et son guide d’installation Synology.">
-<title data-release="title">Télécharger TGME Remote 1.0.0-0456</title>
+<title data-release="title">Télécharger TGME Remote 1.0.0-0457</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <style>
 :root{color-scheme:light;--ink:#14243b;--muted:#53647a;--line:#dce4ec;--blue:#165bd8;--teal:#087e78;--paper:#f4f7fb}
@@ -21,27 +21,37 @@ ul{padding-left:22px}.fine{font-size:14px}@media(max-width:600px){main{padding:2
 <body>
 <header><a href="index.html">TGME Remote</a> · <a href="guide-complet.html">Guide d’installation et d’utilisation</a></header>
 <main>
-<p class="eyebrow" data-release="version">Version 1.0.0-0456</p>
+<p class="eyebrow" data-release="version">Version 1.0.0-0457</p>
 <h1>Télécharger TGME Remote</h1>
 <p>Obtenez le paquet serveur pour votre NAS Synology. Après installation, les applications Windows Client et Technicien se téléchargent depuis la console de votre NAS.</p>
 <section class="card">
 <h2>Application serveur Synology</h2>
-<p><strong data-release="filename">TGMERemoteServer-1.0.0-0456.spk</strong></p>
-<p class="fine">SHA-256 <code data-release="sha256" style="overflow-wrap:anywhere">13e177bf6711a6cee5a3a2a432c8fd8d863ae0789c4d27b8d219e5731c21caaf</code></p>
+<p><strong data-release="filename">TGMERemoteServer-1.0.0-0457.spk</strong></p>
+<p class="fine">SHA-256 <code data-release="sha256" style="overflow-wrap:anywhere">9d3c14a87aa269f5aaa96cdbcecd483664e85deede0ba0a7f3be5c543ba6dbe2</code></p>
 <p>Requiert DSM 7.2.2-72806 au minimum et un modèle Synology pris en charge. Le Centre de paquets vérifie la compatibilité ; ne forcez pas l’installation si votre modèle est refusé.</p>
-<p id="release-status" class="status" role="status" data-release="description">Téléchargez le paquet serveur 1.0.0-0456 depuis la Release officielle GitHub. Les applications Windows Client et Technicien se récupèrent ensuite depuis la console du NAS.</p>
-<a class="button" data-release-link="downloadUrl" data-release="download-label" href="https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0456/TGMERemoteServer-1.0.0-0456.spk" target="_blank" rel="noopener noreferrer">Télécharger directement le SPK 1.0.0-0456</a>
-<a id="release-link" class="button" data-release-link="releaseUrl" href="https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0456" target="_blank" rel="noopener noreferrer">Consulter la Release et ses informations</a>
+<p id="release-status" class="status" role="status" data-release="description">Téléchargez le paquet serveur 1.0.0-0457 depuis la Release officielle GitHub. Les applications Windows Client et Technicien se récupèrent ensuite depuis la console du NAS.</p>
+<a class="button" data-release-link="downloadUrl" data-release="download-label" href="https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0457/TGMERemoteServer-1.0.0-0457.spk" target="_blank" rel="noopener noreferrer">Télécharger directement le SPK 1.0.0-0457</a>
+<a id="release-link" class="button" data-release-link="releaseUrl" href="https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0457" target="_blank" rel="noopener noreferrer">Consulter la Release et ses informations</a>
 <p class="fine">Après la mise à jour, l’administrateur doit accepter les conditions d’utilisation actualisées.</p>
 
 </section>
 <section class="card" id="nouveautes">
-<h2>Nouveautés de la version 1.0.0-0456</h2>
+<h2>Nouveautés de la version 1.0.0-0457</h2>
 <ul>
-<li>Enregistrement local du mot de passe permanent protégé par un PIN distinct par compte Technicien. Le double-clic sur un poste configuré ouvre directement la session de contrôle après validation du PIN.</li>
-<li>Débit maximal d’envoi relevé et réception des outils accélérée. Le débit réel dépend du réseau.</li>
+<li>La case « Enregistrer / remplacer le mot de passe permanent » est désormais visible dans l’écran Technicien et active lorsque « Connexion permanente » est cochée.</li>
+<li>Si le mot de passe permanent du Client change, le Technicien peut saisir le nouveau mot de passe et choisir un nouveau PIN personnel à six chiffres pour remplacer l’enregistrement local.</li>
+</ul>
+</section>
+<section class="card" id="historique-0456">
+<h2>Version précédente — 1.0.0-0456</h2>
+<p>La Release 0456 reste consultable pour son historique, mais son SPK n’est plus proposé au téléchargement. Ses notes restent visibles sur <a href="https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0456">sa page GitHub Release</a>.</p>
+<ul>
+<li>Mot de passe permanent mémorisé localement par compte Technicien et protégé par un PIN à six chiffres; double-clic sur un poste configuré pour ouvrir le contrôle après validation.</li>
+<li>Transferts de fichiers et réception des outils optimisés.</li>
 <li>OpenSSL 3.5.9 LTS et MsQuic 2.6.4 intégrés aux applications Windows.</li>
-<li>Compte rendu Analyse IA mieux séparé entre opérations.</li>
+<li>Compte rendu Analyse IA mieux organisé entre opérations.</li>
+<li>Deuxième Technicien en accès de visualisation, avec le contrôle conservé au premier.</li>
+<li>Reprise des demandes de transfert après une coupure temporaire tant que la session reste ouverte.</li>
 </ul>
 </section>
 <section class="card" id="historique-0450">
