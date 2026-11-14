@@ -1,15 +1,13 @@
 # TGME Remote
 
-Assistance de postes Windows à distance avec un serveur hébergé sur un NAS Synology. **Version publiée : 1.0.0-0469.**
+Assistance de postes Windows à distance avec un serveur hébergé sur un NAS Synology. **Version publiée : 1.0.0-0471.**
 
-[Site de présentation](https://tgmedev.github.io/TGME-Remote/) · [Guide Synology](https://tgmedev.github.io/TGME-Remote/guide-complet.html) · [Tutoriel application et serveur NAS](tutoriel-application.html) · [Télécharger le SPK 0469](https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0469/TGMERemoteServer-1.0.0-0469.spk) · [Détails de la Release 0469](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0469) · [Historique de la Release 0458](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0458) · [Historique de la Release 0457](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0457) · [Historique de la Release 0456](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0456) · [Historique de la Release 1.0.0-0450](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0450)
+[Site de présentation](https://tgmedev.github.io/TGME-Remote/) · [Guide Synology](https://tgmedev.github.io/TGME-Remote/guide-complet.html) · [Tutoriel application et serveur NAS](tutoriel-application.html) · [Télécharger le SPK 0471](https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0471/TGMERemoteServer-1.0.0-0471.spk) · [Détails de la Release 0471](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0471) · [Historique de la Release 0458](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0458) · [Historique de la Release 0457](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0457) · [Historique de la Release 0456](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0456) · [Historique de la Release 1.0.0-0450](https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0450)
 
-## Nouveautés de la version 1.0.0-0469
+## Nouveautés de la version 1.0.0-0471
 
-- « Équilibrée » devient le profil initial pour VP8 hybride, VP9 hybride et Tuiles seul; le choix « Automatique » est retiré. Les profils « Fluidité », « Netteté » et « Faible débit » sont expliqués dans l’interface.
-- La console de charge admin actualise automatiquement ses mesures toutes les dix secondes et indique les sessions, le niveau, le motif et la progression.
-- La régulation configurée agit sur les sessions TURN; la cadence et le débit vidéo ne sont réduits qu’au niveau de pression supérieur. Les connexions directes ne sont pas régulées.
-
+- Le curseur distant reprend sa forme dans la fenêtre de contrôle, notamment les poignées de redimensionnement.
+- Cadences cibles : Équilibrée 20, Fluidité 30, Netteté 40 et Faible débit 50 images/s pour VP8 hybride, VP9 hybride et Tuiles seul. La cadence réelle dépend du traitement et du réseau.
 ## Historique de la version 1.0.0-0458
 
 - Ajout d’un bouton sous le champ de connexion pour enregistrer ou remplacer le mot de passe permanent du Client et son PIN personnel à six chiffres.

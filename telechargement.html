@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Télécharger TGME Remote et son guide d’installation Synology.">
-<title data-release="title">Télécharger TGME Remote 1.0.0-0469</title>
+<title data-release="title">Télécharger TGME Remote 1.0.0-0471</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <style>
 :root{color-scheme:light;--ink:#14243b;--muted:#53647a;--line:#dce4ec;--blue:#165bd8;--teal:#087e78;--paper:#f4f7fb}
@@ -21,28 +21,22 @@ ul{padding-left:22px}.fine{font-size:14px}@media(max-width:600px){main{padding:2
 <body>
 <header><a href="index.html">TGME Remote</a> · <a href="guide-complet.html">Guide d’installation et d’utilisation</a></header>
 <main>
-<p class="eyebrow" data-release="version">Version 1.0.0-0469</p>
+<p class="eyebrow" data-release="version">Version 1.0.0-0471</p>
 <h1>Télécharger TGME Remote</h1>
 <p>Obtenez le paquet serveur pour votre NAS Synology. Après installation, les applications Windows Client et Technicien se téléchargent depuis la console de votre NAS.</p>
 <section class="card">
 <h2>Application serveur Synology</h2>
-<p><strong data-release="filename">TGMERemoteServer-1.0.0-0469.spk</strong></p>
-<p class="fine">SHA-256 <code data-release="sha256" style="overflow-wrap:anywhere">46d8d239964d91d4a355e370869ceae6e5ac041d2475ef9146e4fe3a0f5df097</code></p>
+<p><strong data-release="filename">TGMERemoteServer-1.0.0-0471.spk</strong></p>
+<p class="fine">SHA-256 <code data-release="sha256" style="overflow-wrap:anywhere">04d658d7b011960b190c73de929664df5286a13ebbdea5eaf2e6db4be175c46e</code></p>
 <p>Requiert DSM 7.2.2-72806 au minimum et un modèle Synology pris en charge. Le Centre de paquets vérifie la compatibilité ; ne forcez pas l’installation si votre modèle est refusé.</p>
-<p id="release-status" class="status" role="status" data-release="description">Téléchargez le paquet serveur 1.0.0-0469 depuis la Release officielle GitHub. Le profil vidéo Équilibrée est sélectionné à la connexion pour les modes VP8, VP9 et Tuiles.</p>
-<a class="button" data-release-link="downloadUrl" data-release="download-label" href="https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0469/TGMERemoteServer-1.0.0-0469.spk" target="_blank" rel="noopener noreferrer">Télécharger directement le SPK 1.0.0-0469</a>
-<a id="release-link" class="button" data-release-link="releaseUrl" href="https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0469" target="_blank" rel="noopener noreferrer">Consulter la Release et ses informations</a>
+<p id="release-status" class="status" role="status" data-release="description">Téléchargez le paquet serveur 1.0.0-0471 depuis la Release officielle GitHub. Les applications Windows Client et Technicien se récupèrent ensuite depuis la console du NAS.</p>
+<a class="button" data-release-link="downloadUrl" data-release="download-label" href="https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0471/TGMERemoteServer-1.0.0-0471.spk" target="_blank" rel="noopener noreferrer">Télécharger directement le SPK 1.0.0-0471</a>
+<a id="release-link" class="button" data-release-link="releaseUrl" href="https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0471" target="_blank" rel="noopener noreferrer">Consulter la Release et ses informations</a>
 <p class="fine">Après la mise à jour, l’administrateur doit accepter les conditions d’utilisation actualisées.</p>
 
 </section>
 <section class="card" id="nouveautes">
-<h2>Nouveautés de la version 1.0.0-0469</h2>
-<ul>
-<li>« Équilibrée » est le profil choisi à la connexion pour les trois modes : VP8 hybride, VP9 hybride et Tuiles seul. Le profil « Automatique » a été retiré du sélecteur. « Fluidité », « Netteté » et « Faible débit » ont chacun une courte explication.</li>
-<li>Les cadences cibles du profil Équilibrée sont de 20 images/s pour VP8 et VP9 hybrides et de 30 images/s pour Tuiles seul. Elles peuvent varier selon la charge et les conditions de la session.</li>
-<li>La console admin de charge s’actualise toutes les dix secondes et affiche les sessions, le niveau, le motif et la progression. Une fois activée et configurée, la régulation limite les transferts en relais TURN, puis la cadence et le débit vidéo au niveau de pression supérieur. Elle ne limite pas les sessions directes. La mesure réseau dépend de l’interface et de la capacité de référence renseignées.</li>
-</ul>
-</section>
+<h2>Nouveautés de la version 1.0.0-0471</h2><ul><li>Le curseur distant reprend sa forme dans la fenêtre de contrôle, notamment les poignées de redimensionnement.</li><li>Cadences cibles : Équilibrée 20, Fluidité 30, Netteté 40 et Faible débit 50 images/s pour VP8 hybride, VP9 hybride et Tuiles seul. La cadence réelle dépend du traitement et du réseau.</li></ul>
 <section class="card" id="historique-0458">
 <h2>Version précédente — 1.0.0-0458</h2>
 <p>La Release 0458 reste consultable pour son historique, mais son SPK n’est plus proposé au téléchargement. Ses notes sont conservées sur <a href="https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0458">sa page GitHub Release</a>.</p>
