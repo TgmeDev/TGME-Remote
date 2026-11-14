@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0-0458",
-  "filename": "TGMERemoteServer-1.0.0-0458.spk",
-  "size": 119326720,
-  "sha256": "5ceb805328e47d723616e7968d948b55d9b0435c4eb711df87c9834d0cea2a29",
-  "releaseUrl": "https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0458",
-  "downloadUrl": "https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0458/TGMERemoteServer-1.0.0-0458.spk"
+  "version": "1.0.0-0469",
+  "filename": "TGMERemoteServer-1.0.0-0469.spk",
+  "size": 119377920,
+  "sha256": "46d8d239964d91d4a355e370869ceae6e5ac041d2475ef9146e4fe3a0f5df097",
+  "releaseUrl": "https://github.com/TgmeDev/TGME-Remote/releases/tag/1.0.0-0469",
+  "downloadUrl": "https://github.com/TgmeDev/TGME-Remote/releases/download/1.0.0-0469/TGMERemoteServer-1.0.0-0469.spk"
 }
