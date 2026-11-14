@@ -8,6 +8,7 @@ Assistance de postes Windows à distance avec un serveur hébergé sur un NAS Sy
 
 - Le curseur distant reprend sa forme dans la fenêtre de contrôle, notamment les poignées de redimensionnement.
 - Cadences cibles : Équilibrée 20, Fluidité 30, Netteté 40 et Faible débit 50 images/s pour VP8 hybride, VP9 hybride et Tuiles seul. La cadence réelle dépend du traitement et du réseau.
+- La console d’administration ajoute une page « Charge du NAS » : activation de l’adaptation automatique, seuils CPU et réseau, capacités Internet de référence et test manuel NAS/Internet. Elle affiche aussi les sessions, les mesures actualisées et le niveau d’adaptation appliqué.
 ## Historique de la version 1.0.0-0458
 
 - Ajout d’un bouton sous le champ de connexion pour enregistrer ou remplacer le mot de passe permanent du Client et son PIN personnel à six chiffres.
